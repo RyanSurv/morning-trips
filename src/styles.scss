@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+$color-primary: #ff7675;
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  //   font-family: "Lobster", cursive;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: auto;
+  max-width: 130rem;
+  padding: 0 5rem;
+}
+
+.button {
+  padding: 1rem 4rem;
+  font-size: 1.4rem;
+  border: none;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-1px);
+    cursor: pointer;
+  }
+
+  &-large {
+    font-size: 2.4rem;
+    padding: 1.5rem 8rem;
+  }
+
+  &-primary {
+    color: white;
+    background-color: $color-primary;
+  }
+
+  &-white-outline {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: #222;
+    }
+  }
+}

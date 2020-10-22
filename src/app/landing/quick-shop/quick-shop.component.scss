@@ -1,0 +1,85 @@
+$color-primary: #ff7675;
+$color-primary-light: #ff9b9b;
+
+.quickShop {
+  padding: 10rem 0;
+  text-align: center;
+
+  &_text {
+    h2 {
+      font-size: 3.6rem;
+    }
+
+    p {
+      margin-top: 2rem;
+    }
+  }
+
+  &_items {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &_item {
+      &:not(:first-child) {
+        margin-left: 5rem;
+      }
+
+      &_image {
+        img {
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            transform: translateY(-1px);
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+          }
+        }
+      }
+
+      &_description {
+        h3 {
+          margin-top: 1rem;
+          font-family: "Lobster", cursive;
+        }
+
+        p {
+          margin-top: 2rem;
+          color: #666;
+        }
+
+        &_price {
+          font-size: 2.4rem;
+          color: $color-primary !important;
+          text-decoration: underline;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            color: $color-primary-light !important;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  &_all {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 775px) {
+  .quickShop {
+    &_items {
+      flex-direction: column;
+      align-items: center;
+
+      &_item {
+        &:not(:first-child) {
+          margin-left: 0;
+          margin-top: 5rem;
+        }
+      }
+    }
+  }
+}

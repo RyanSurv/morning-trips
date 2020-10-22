@@ -1,0 +1,37 @@
+<div class="header">
+    <div class="container">
+        <div class="header_large">
+            <div class="header_large_logo">
+                <h2>Morning Trips</h2>
+            </div>
+            <nav class="header_large_nav">
+                <ul>
+                    <li class="selected">Home</li>
+                    <li>Shop</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <div class="header_large_actions">
+                <button class="button button-primary">Login</button>
+            </div>
+        </div>
+        <div class="header_small">
+            <div class="header_small_logo">
+                <h2>Morning Trips</h2>
+            </div>
+            <i class="fas fa-hamburger" (click)="openNav()"></i>
+        </div>
+        <div class="header_mobile_menu" #mobileNav>
+            <div class="header_mobile_menu_bg" (click)="closeNav()">
+            </div>
+            <div class="header_mobile_menu_nav">
+                <ul>
+                    <li class="selected">Home</li>
+                    <li>Shop</li>
+                    <li>Contact</li>
+                    <li>Login</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
